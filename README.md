@@ -28,4 +28,14 @@
 - `NiMH`: **Life Cycle: 300-500, Cell Voltage: 1.2V, Peak Load Current: 5C, Toxicity: Low**
 - `NiCd`: **Life Cycle: 1000, Cell Voltage: 1.2V, Peak Load Current: 20C, Toxicity: Very high**
 
+
+## רשות: הרחבת התרגיל
+צרו input נוסף ובו ניתן להזין ערך נוסף. כאשר המשתמש יזין בשדה הקלט הראשון את הערך `Li-ion`, התכנית שלכם תתייחס גם לשדה הקלט השני.
+שדה הקלט השני יכול להכיל את הערכים: `Cobalt`, `Manganese`, `Phosphate`
+
+עבור הקלט `Li-ion` בשדה הראשון והקלט `Cobalt` בשדה השני, הפלט יהיה:  **Life Cycle: 500-1000, Cell Voltage: 3.6V, Peak Load Current: >3C, Toxicity: Low**
+
+עבור הקלט `Li-ion` בשדה הראשון והקלט `Manganese` בשדה השני, הפלט יהיה:  **Life Cycle: 500-1000, Cell Voltage: 3.8V, Peak Load Current: >30C, Toxicity: Low**
+
+עבור הקלט `Li-ion` בשדה הראשון והקלט `Phosphate` בשדה השני, הפלט יהיה:  **Life Cycle: 1000-2000, Cell Voltage: 3.3V, Peak Load Current: >30C, Toxicity: Low**
 </div>
