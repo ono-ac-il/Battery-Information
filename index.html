@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inp">
+    <button id="btn">Click</button>
+    <div id="result"></div>
+    <script>
+        btn.addEventListener('click', () => {
+            switch (inp.value) {
+                case "Lead Acid":
+                    document.getElementById('result').innerHTML = "Life Cycle: 200-300, Cell Voltage: 2V, Peak Load Current: 5C, Toxicity: Very high"
+                    break;
+                case "Li-ion Cobalt":
+                    document.getElementById('result').innerHTML = "Life Cycle: 500-1000, Cell Voltage: 3.6V, Peak Load Current: >3C, Toxicity: Low"
+                    break;
+                case "NiMH":
+                    document.getElementById('result').innerHTML = "Life Cycle: 300-500, Cell Voltage: 1.2V, Peak Load Current: 5C, Toxicity: Low"
+                    break;
+                case "NiCd":
+                    document.getElementById('result').innerHTML = "Life Cycle: 1000, Cell Voltage: 1.2V, Peak Load Current: 20C, Toxicity: Very high"
+                    break;
+
+            }
+        });
+    </script>
+</body>
+
+</html>

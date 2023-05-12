@@ -4,7 +4,10 @@
   "description": "<div dir=\"rtl\">",
   "main": "index.js",
   "scripts": {
-    "test": "port=15000 npx playwright test",
+    "test:leadacid": "NODE_NO_WARNINGS=1 port=15000 npx playwright test -g 'Lead Acid output'",
+    "test:Liion": "NODE_NO_WARNINGS=1 port=15000 npx playwright test -g 'Lead Acid output'",
+    "test:NiMH": "NODE_NO_WARNINGS=1 port=15000 npx playwright test -g 'Lead Acid output'",
+    "test:NiCd": "NODE_NO_WARNINGS=1 port=15000 npx playwright test -g 'Lead Acid output'",
     "start": "http-server -p 15000",
     "preinstall": "npx playwright install-deps chromium"
   },

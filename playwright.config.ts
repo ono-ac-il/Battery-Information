@@ -1,6 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const localServer = 'http://127.0.0.1:' + process.env.port;
+const port = process.env.port || 15000;
+const localServer = 'http://127.0.0.1:' + port;
 
 export default defineConfig({
   testDir: './tests',

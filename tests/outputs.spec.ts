@@ -10,6 +10,7 @@ const OUTPUTS = {
   "NiMH": "Life Cycle: 300-500, Cell Voltage: 1.2V, Peak Load Current: 5C, Toxicity: Low",
   "NiCd": "Life Cycle: 1000, Cell Voltage: 1.2V, Peak Load Current: 20C, Toxicity: Very high"
 }
+
 Object.keys(OUTPUTS).forEach((key) => {
   test(`${key} output`, async ({ page }) => {
     await page.locator('#inp').fill(key);
